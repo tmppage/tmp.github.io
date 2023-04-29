@@ -1,0 +1,205 @@
+=<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Подаване на сигнал</title>
+  </head>
+  <body>
+    <header>Форма за подаване на сигнал</header>
+    <main>
+      <form action="https://api.web3forms.com/submit" method="POST" id="form" >
+        <input type="hidden" name="access_key" value="b9cfeb5c-8530-4885-b706-9503591cd1d5" />
+        <input type="hidden" name="subject" value="Нов сигнал" />
+        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+        <input id="name" type="text" name="firstName" placeholder="ИМЕ" required>
+        <input id="name" type="text" name="surname" placeholder="ПРЕЗИМЕ" required>
+        <input id="name" type="text" name="familyName" placeholder="ФАМИЛИЯ" required>
+        <input id="email" type="text" name="email" placeholder="ИМЕЙЛ" required>
+        <input id="email" type="text" name= "phone" placeholder="ТЕЛЕФОН +359" required>
+        <input id="email" type="text" name="address" placeholder="НАСТОЯЩ АДРЕС" required>
+        <textarea id="message" type="text" name="message" placeholder="КРАТКО ОПИСАНИЕ" required></textarea>
+        <input id="submit" type="submit" value="Изпрати">
+        <style>
+          @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+          
+          input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+            color: #fff;
+            font-size: 0.875em;
+          }
+          
+          input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+            color: #fff;
+          }
+          
+          input::-moz-placeholder, textarea::-moz-placeholder {
+            color: #fff;
+            font-size: 0.875em;
+          }
+          
+          input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+            color: #fff;
+          }
+          
+          input::placeholder, textarea::placeholder {
+            color: #fff;
+            font-size: 0.875em;
+          }
+          
+          input:focus::placeholder, textarea::focus:placeholder {
+            color: #fff;
+          }
+          
+          input::-ms-placeholder, textarea::-ms-placeholder {
+            color: #fff;
+            font-size: 0.875em;
+          }
+          
+          input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+            color: #fff;
+          }
+          
+          /* on hover placeholder */
+          
+          input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+            color: #545050;
+            font-size: 0.875em;
+          }
+          
+          input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+            color: #545050;
+          }
+          
+          input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+            color: #545050;
+            font-size: 0.875em;
+          }
+          
+          input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+            color: #545050;
+          }
+          
+          input:hover::placeholder, textarea:hover::placeholder {
+            color: #545050;
+            font-size: 0.875em;
+          }
+          
+          input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+            color: #545050;
+          }
+          
+          input:hover::placeholder, textarea:hover::placeholder {
+            color: #545050;
+            font-size: 0.875em;
+          }
+          
+          input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+            color: #545050;
+          }
+          
+          body {
+            font-family: 'Lato', sans-serif;
+            background: #3168d6;
+            color: #fff;
+          }
+          
+          header {
+            position: relative;
+            margin: 100px 0 25px 0;
+            font-size: 2.3em;
+            text-align: center;
+            letter-spacing: 7px;
+          }
+          
+          #form {
+            position: relative;
+            width: 500px;
+            margin: 50px auto 100px auto;
+          }
+          
+          input {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+            width: 470px;
+            height: 50px;
+            padding: 0px 15px 0px 15px;
+          
+            background: transparent;
+            outline: none;
+            color: #fff;
+          
+            border: solid 1px #fff;
+            border-bottom: none;
+          
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+          }
+          
+          input:hover {
+            background: #fff;
+            color: #545050;
+          }
+          
+          textarea {
+            width: 470px;
+            max-width: 470px;
+            height: 110px;
+            max-height: 110px;
+            padding: 15px;
+          
+            background: transparent;
+            outline: none;
+          
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+          
+            border: solid 1px #fff;
+          
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+          }
+          
+          textarea:hover {
+            background: #fff;
+            color: #545050;
+          }
+          
+          #submit {
+            position: relative;
+            width: 470px;
+          
+            padding: 0;
+            margin: -5px 0px 0px 0px;
+          
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+            color: #fff;
+          
+            outline:none;
+            cursor: pointer;
+          
+            border: solid 1px #b3aca7;
+            border-top: none;
+          }
+          
+          #submit:hover {
+            color: #545050;
+          }
+          </style>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
+
+
+
+
+
+
